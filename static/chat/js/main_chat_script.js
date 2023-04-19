@@ -4,7 +4,7 @@ var l=0
 var end = false
 
             
-            //this is just the pause function
+//this is the pause function that handles voice recording and sending.
 function detectSilence(stream, onSoundEnd =_=>{}, onSoundStart =_=>{}, silence_delay = 2000, min_decibels = -80) {
     mediaRecorder = new MediaStreamRecorder(stream);
 
